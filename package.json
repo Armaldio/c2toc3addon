@@ -1,34 +1,45 @@
 {
-	"name": "c2toc3addon",
-	"version": "0.0.1",
-	"description": "C2 addon to C3 converter Edit",
-	"main": "bin/index.js",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/armaldio/c2toc3addon.git"
-	},
-	"scripts": {
-		"g": "npm i -g .",
-		"publish-please": "publish-please"
-	},
-	"bin": {
-		"c2toc3": "bin/index.js"
-	},
-	"preferGlobal": true,
-	"keywords": [
-		"c2",
-		"c3",
-		"convert",
-		"addon"
-	],
-	"author": {
-		"name": "Armaldio",
-		"email": "armaldio@gmail.com",
-		"url": "armaldio.xyz"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/armaldio/c2toc3addon/issues"
-	},
-	"homepage": "https://github.com/armaldio/c2toc3addon#readme"
+  "name": "c2toc3addon",
+  "version": "0.0.1",
+  "description": "C2 addon to C3 converter Edit",
+  "main": "bin/c2toc3.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armaldio/c2toc3addon.git"
+  },
+  "scripts": {
+    "g": "npm i -g .",
+    "publish-please": "publish-please",
+    "test": "node . -f tests/armaldio_project_translation"
+  },
+  "bin": {
+    "c2toc3": "bin/c2toc3.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "c2",
+    "c3",
+    "convert",
+    "addon"
+  ],
+  "author": {
+    "name": "Armaldio",
+    "email": "armaldio@gmail.com",
+    "url": "armaldio.xyz"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/armaldio/c2toc3addon/issues"
+  },
+  "homepage": "https://github.com/armaldio/c2toc3addon#readme",
+  "dependencies": {
+    "c2-addon-parser": "^0.5.0",
+    "commander": "^2.9.0",
+    "icojs": "^0.7.1",
+    "ncp": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.3.31",
+    "@types/ncp": "^2.0.0"
+  }
 }
