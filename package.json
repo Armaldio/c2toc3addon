@@ -34,6 +34,7 @@
   "homepage": "https://github.com/armaldio/c2toc3addon#readme",
   "dependencies": {
     "c2-addon-parser": "^0.5.0",
+    "case": "^1.5.2",
     "commander": "^2.9.0",
     "icojs": "^0.7.1",
     "ncp": "^2.0.0"
